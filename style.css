@@ -1,0 +1,22 @@
+
+* { 
+	font-family: Helvetica, 'Times New Romans', sans-serif;
+	 box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+	background-color: antiquewhite;
+}
+#home {
+	background-color: limegreen;
+}
+#about-me {
+	background-color: lightsalmon;
+}
+#projects {
+	background-color: gold;
+}
+footer {
+	background-color: blue;
+}
