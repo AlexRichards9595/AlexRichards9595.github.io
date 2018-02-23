@@ -6,17 +6,38 @@
     padding: 0;
 }
 header {
-	background-color: antiquewhite;
+	background-color: gray;
+	color: white;
+}
+.social-media-images {
+	height: 40px;
+	width: 40px;
 }
 #home {
-	background-color: limegreen;
+	background-color: white;
 }
 #about-me {
-	background-color: lightsalmon;
+	background-color: lightgray;
 }
 #projects {
-	background-color: gold;
+	background-color: white;
 }
 footer {
-	background-color: blue;
+	background-color: black;
+	color: white;
+}
+.card {
+	background-color: white;
+}
+nav ul a {
+	text-decoration: none;
+	color: white;
+	width: 5rem;
+}
+ul {
+	list-style-type: none;
+}
+main {
+	width: 60vw;
+	margin: auto;
 }

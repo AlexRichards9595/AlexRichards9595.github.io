@@ -11,17 +11,22 @@
 <body>
 	<div class="container">
 		<header>
-			<p class="logo">logo</p>	
-			<nav>
-				<a href="#home">Home</a>
-				<a href="#about-me">About Me</a>
-				<a href="#projects">Projects</a>
-			</nav>		
-			<ul class= social-media>
-				<li>fb</li>
-				<li>LIn</li>
-				<li>github </li>
-			</ul>
+			<p class="logo">logo</p>
+			<div class="header-wrapper">	
+				<nav>
+					<ul>
+						<a href="#home">Home</a>
+						<a href="#about-me">About</a>
+						<a href="#projects">Projects</a>
+					</ul>
+				</nav>
+				<div>		
+					<ul class= social-media>
+						<li><img class="social-media-images" src="./resources/images/github.svg"></li>
+						<li><img class="social-media-images" src="./resources/images/linkedin-icon.svg"></li>
+					</ul>
+				</div>
+			</div>
 		</header>
 		<main>
 			<section id="home">
@@ -57,9 +62,51 @@
 				</div>
 				<h1>Picture goes here</h1>
 			</section>
-			<section id="projects">projects</section>
+			<section id="projects">
+				<section class="cards">
+					<section class="card">
+               			 <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./resources/images/screenshot-fizzbuzz.png">
+                		<div class="card-body">
+                  			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  			<div class="card-bottom">
+                    			<div class="btn-group">
+                      				<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    			</div>
+                  			</div>
+               			</div>
+               		</section>
+               		<section class="card">
+               			 <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./resources/images/screenshot-virtual-pet-amok.png">
+                		<div class="card-body">
+                  			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  			<div class="card-bottom">
+                    			<div class="btn-group">
+                      				<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    			</div>
+                  			</div>
+               			</div>
+               		</section>
+               		<section class="card">
+               			 <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="./resources/images/screenshot-reviews.png">
+                		<div class="card-body">
+                  			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  			<div class="card-bottom">
+                    			<div class="btn-group">
+                      				<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    			</div>
+                  			</div>
+               			</div>
+               		</section>
+               	</section>
+			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<nav>
+				<a href="#home">Home</a>
+				<a href="#about-me">About Me</a>
+				<a href="#projects">Projects</a>
+			</nav>	
+		</footer>
 	</div>
 </body>
 </html>

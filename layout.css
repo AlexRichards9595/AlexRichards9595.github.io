@@ -1,21 +1,22 @@
-header {
+.header-wrapper {
 	display: flex;
 	justify-content: space-around;
-	width: 100vw;
 	align-items: center;
+}
+.logo {
+	text-align: center;
 }
 .social-media {
 	display: flex;
 	flex-direction: row
 }
-nav {
+nav ul {
 	display: flex;
-	justify-content: space-between;
-	width: 25vw;
+	justify-content: space-around;
 }
 .container {
 	display: grid;
-	grid-template-rows: 150px auto 150px;
+	grid-template-rows: 75px auto 75px;
 }
 main {
 	display: grid;
@@ -32,8 +33,33 @@ main {
 }
 .home-text {
 	text-align: center;
+	align-self: center;
 }
 #about-me {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
+#projects {
+	display: flex;
+	justify-content: center;
+}
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	width: 60vw;
+	margin: auto;
+	align-items: center;
+}
+.card-body {
+    padding: 19px;
+}
+    .card p {
+        padding: 5px;
+    }
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
