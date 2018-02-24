@@ -1,4 +1,4 @@
-.header-wrapper {
+header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -18,13 +18,22 @@ nav ul {
 	display: grid;
 	grid-template-rows: 75px auto 75px;
 }
-main {
+main{
 	display: grid;
 	grid-template-rows: 100vh 100vh 100vh;
 }
 #home {
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.home-center {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	flex-direction: column;
 }
 #home-picture {
 	display: flex;
@@ -39,17 +48,32 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
+#about-me-text {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
 #projects {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+}
+#projects h2 {
+	margin-top: 3rem;
+}
+.cards {
 	display: flex;
 	justify-content: center;
 }
 .cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 20px;
+	grid-column-gap: 3rem;
 	width: 60vw;
 	margin: auto;
 	align-items: center;
+
 }
 .card-body {
     padding: 19px;
