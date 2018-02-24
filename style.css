@@ -7,6 +7,11 @@
     margin: 0;
     padding: 0;
 }
+h2 {
+	font-size: 3rem;
+	font-family: 'Nanum Brush Script', cursive;
+
+}
 header {
 	background-color: black;
 	color: white;
@@ -31,6 +36,7 @@ footer {
 .card {
 	background-color:#585858;
 	color: white;
+	border-radius: 5px;
 }
 nav ul a {
 	text-decoration: none;
@@ -61,7 +67,14 @@ ul {
 #about-me-text h2 {
 	margin-bottom: 3rem;
 }
-/*.wrapper {
-	width: 60vw;
-	margin: 0 auto;
-}*/
+.card-img-top {
+	height: 150px; 
+	width: 100%;
+	display: block;
+}
+.btn {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+}
