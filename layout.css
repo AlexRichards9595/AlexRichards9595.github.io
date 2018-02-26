@@ -5,6 +5,11 @@ header {
 }
 .logo {
 	text-align: center;
+	transform: rotate(0deg);
+	transition-duration: .2sec;
+}
+.logo:hover {
+	transform: rotate(15deg);
 }
 .social-media {
 	display: flex;
