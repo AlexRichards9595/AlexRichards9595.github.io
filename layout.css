@@ -63,6 +63,7 @@ main{
 	text-align: center;
 	align-items: center;
 	flex-direction: column;
+	justify-content: space-around;
 }
 #projects h2 {
 	margin-top: 3rem;
@@ -72,7 +73,7 @@ main{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 3rem;
-	width: 60vw;
+	width: 75vw;
 	margin: auto;
 	align-items: center;
 }
