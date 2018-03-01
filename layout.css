@@ -51,7 +51,7 @@ main{
 #about-me {
 	display: flex;
 	justify-content: space-around;
-	flex-shrink: 2;
+	flex-shrink: 2; 
 }
 #about-me-text {
 	display: flex;
