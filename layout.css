@@ -1,7 +1,9 @@
-header {
+.header-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	width: 85vw;
+	margin: auto;
 }
 .logo {
 	text-align: center;
@@ -13,10 +15,14 @@ header {
 }
 .social-media {
 	display: flex;
-	flex-direction: row
+}
+nav {
+	display: flex;
+	justify-content: space-between;
 }
 nav ul {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
 }
 .container {
@@ -26,6 +32,10 @@ nav ul {
 main{
 	display: grid;
 	grid-template-rows: repeat(3, minmax(100vh, auto));
+}
+.projects__main{
+	display: grid;
+	grid-template-rows: repeat(1, minmax(100vh,auto));
 }
 #home {
 	display: flex;
@@ -74,6 +84,7 @@ main{
 	flex-wrap: wrap;
 	margin: auto;
 	align-items: center;
+	justify-content: space-around;
 }
 .card-body {
     padding: 19px;

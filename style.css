@@ -16,10 +16,26 @@ header {
 	background-color: black;
 	color: white;
 }
+.nav-menu {
+	display:block;
+ 	height: 25px;
+  	width: 25px;
+  	border-radius: 50%;
+  	border: 1.5px solid white;
+	margin-right: 5px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+nav ul {
+	display: none;
+}
 .social-media-images {
 	height: 40px;
 	width: 40px;
 	margin: 1px;
+	transition: all .2s ease-in-out; 
+    transform: scale(1); 
 }
 .social-media-images:hover {
 	transition: all .2s ease-in-out; 
@@ -43,6 +59,7 @@ footer {
 	color: white;
 	border-radius: 5px;
 	box-shadow: 6px 5px 9px 1px grey;
+	max-width: 300px;
 }
 nav ul a {
 	text-decoration: none;
