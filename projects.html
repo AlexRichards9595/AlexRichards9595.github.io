@@ -13,8 +13,10 @@
 <body>
 <div class="container">
 		<header>
-			<img class="logo" src="./resources/images/deci-logo.png" />
+			<div class="header-container">
+			<img class="logo" src="./resources/images/deci-logo.png" alt="Deci logo" />
 			<nav>
+				<button class="nav-menu">=</button>
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about-me">About</a></li>
@@ -22,10 +24,11 @@
 				</ul>
 			</nav>		
 			<ul class= social-media>
-				<li><a href="mailto:Alex.Richards9595@gmail.com"><img class="social-media-images" src="./resources/images/google-icon.svg"></a></li>
-				<li><a href="https://github.com/AlexRichards9595" target="_blank"><img class="social-media-images" src="./resources/images/github.svg"></a></li>
-				<li><a href="https://www.linkedin.com/in/alexrichards9595" target="_blank"><img class="social-media-images" src="./resources/images/linkedin-icon.svg"></a></li>
+				<li><a href="mailto:Alex.Richards9595@gmail.com"><img class="social-media-images" src="./resources/images/google-icon.svg" alt="email me icon"></a></li>
+				<li><a href="https://github.com/AlexRichards9595" target="_blank"><img class="social-media-images" src="./resources/images/github.svg" alt="github logo"></a></li>
+				<li><a href="https://www.linkedin.com/in/alexrichards9595" target="_blank"><img class="social-media-images" src="./resources/images/linkedin-icon.svg" alt="linkedin logo"></a></li>
 			</ul>
+			</div>
 		</header>
 		<main class="projects__main">
 		<section id="projects">
@@ -37,6 +40,7 @@
                 			<h3>Fortune Teller</h3>
                   			<p class="card-text">First project! This is a java program that takes a users input and, based on that information, predicts their 'future' using different equations and logical considerations.</p>
                   			<div class="card-bottom">
+                  				<button class="btn descriptionButton">Description</button>
                       			<a href="https://github.com/AlexRichards9595/fortune-teller"><button type="button" class="btn">View</button></a>
                   			</div>
                			</div>
@@ -47,6 +51,7 @@
                 			<h3>Virtual Pet Shelter</h3>
                   			<p class="card-text">A java program that utilizes object oriented programming to add and remove different types of pets and take care of them according to the kind of pet that they are.</p>
                   			<div class="card-bottom">
+                  				<button class="btn descriptionButton">Description</button>
                       			<a href="https://github.com/AlexRichards9595/virtual-pet-amok"><button type="button" class="btn">View</button></a>
                   			</div>
                			</div>
@@ -57,6 +62,7 @@
                 			<h3>Reviews Site</h3>
                   			<p class="card-text">The beginning of building a site that utilizes Java and Spring MVC that allows the user to navigate through  different reviews of the Lord of the Rings movies. More to come here. </p>
                   			<div class="card-bottom">
+                  				<button class="btn descriptionButton">Description</button>
                       			<a href="https://github.com/AlexRichards9595/reviews"><button type="button" class="btn">View</button></a>
                   			</div>
                			</div>
@@ -66,6 +72,7 @@
 		</main>
 		<footer>
 			<nav>
+				<button class="nav-menu">=</button>
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about-me">About</a></li>
@@ -74,5 +81,6 @@
 			</nav>	
 		</footer>
 	</div>
+	<script src="./src/js/app.js"></script>
 </body>
 </html>

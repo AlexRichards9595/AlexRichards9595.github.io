@@ -2,13 +2,44 @@ toggleMenu = ul => {
 	if(ul.style.display==='flex') {ul.style.display = 'none'}
 	else {ul.style.display = 'flex'}
 };
+const menuButtons = document.querySelectorAll('.nav-menu');
+if(menuButtons) menuButtons.forEach(button => {
+		const navUl = button.parentNode.querySelector("nav ul");
+		button.addEventListener('click', () => {toggleMenu(navUl)});
+});
 
-const button = document.querySelector('.nav-menu');
-const navUl = document.querySelector('nav ul');
-if(button) button.addEventListener('click', () => toggleMenu(navUl));
+const descriptionButtons = document.querySelectorAll('.descriptionButton');
+if(descriptionButtons) descriptionButtons.forEach(descriptionButton => {
+		const cardDescription = descriptionButton.parentNode.parentNode.querySelector(".card-text");
+		descriptionButton.addEventListener('click', () => {toggleMenu(cardDescription)});
+});	
 
-const descriptionButton = document.querySelector('.descriptionButton');
-descriptionButton.forEach(button => {
-	const cardDescription = descriptionButton.parentNode.previousSibling;
-	button.addEventListener('click', () => toggleMenu(cardDescription));
+
+const projectCarousel = index => {
+	const projectCards = document.querySelectorAll('.main-card');
+	if(projectCards) projectCards.forEach(card => {
+		if(index > projectCards.length) {slideIndex = 1}
+		if(index < 1) {slideIndex = projectCards.length}
+		for (var i = projectCards.length - 1; i >= 0; i--) {
+			projectCards[i].style.display = 'none';
+		}
+		projectCards[slideIndex-1].style.display = 'flex';
+
 	});
+};	
+
+let slideIndex = 1;
+projectCarousel(slideIndex);
+
+const plusSlideNumber = (n) => {
+	projectCarousel(slideIndex += n);
+}	
+
+const nextButton = document.querySelector("#next-button")
+nextButton.addEventListener('click', () => plusSlideNumber(1));
+const previousButton = document.querySelector("#previous-button")
+previousButton.addEventListener('click', () => plusSlideNumber(-1));
+
+
+
+

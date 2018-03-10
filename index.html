@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title> Alex Richards</title>
-	 <link rel="shortcut icon" type="image/x-icon" href="deci-logo-png" />
+	 <!-- <link rel="shortcut icon" type="image/x-icon" href="deci-logo-png" /> -->
 
 	<link rel="stylesheet" href="./layout.css">
 	<link rel="stylesheet" href="./style.css">
@@ -14,7 +14,7 @@
 	<div class="container">
 		<header>
 			<div class="header-container">
-			<img class="logo" src="./resources/images/deci-logo.png" alt:"D " />
+			<img class="logo" src="./resources/images/deci-logo.png" alt="Deci logo" />
 			<nav>
 				<button class="nav-menu">=</button>
 				<ul>
@@ -24,9 +24,9 @@
 				</ul>
 			</nav>		
 			<ul class= social-media>
-				<li><a href="mailto:Alex.Richards9595@gmail.com"><img class="social-media-images" src="./resources/images/google-icon.svg"></a></li>
-				<li><a href="https://github.com/AlexRichards9595" target="_blank"><img class="social-media-images" src="./resources/images/github.svg"></a></li>
-				<li><a href="https://www.linkedin.com/in/alexrichards9595" target="_blank"><img class="social-media-images" src="./resources/images/linkedin-icon.svg"></a></li>
+				<li><a href="mailto:Alex.Richards9595@gmail.com"><img class="social-media-images" src="./resources/images/google-icon.svg" alt="email me icon"></a></li>
+				<li><a href="https://github.com/AlexRichards9595" target="_blank"><img class="social-media-images" src="./resources/images/github.svg" alt="github logo"></a></li>
+				<li><a href="https://www.linkedin.com/in/alexrichards9595" target="_blank"><img class="social-media-images" src="./resources/images/linkedin-icon.svg" alt="linkedin logo"></a></li>
 			</ul>
 			</div>
 		</header>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="home-center">
 						<h1 id="name">Alex Richards</h1>
-						<img id="home-picture" src="./resources/images/zion-circle.png">
+						<img id="home-picture" src="./resources/images/zion-circle.png" alt="home picture">
 					</div>
 					<div class="home-text">
 						<h3>Back end</h3>
@@ -62,44 +62,46 @@
 					<h2>About Me</h2>
 					<p>I've been married a little over a year to that girl over there. I love camping and climbing mountains when I get the chance to get out of Ohio. I've hiked Long's peak in Colorado, Mt. Marcy in New York and tried not to fall off of Angel's landing in Zion. I also enjoy talking about philosophy to whoever will listen.</p>
 				</div>
-				<img id="about-me-picture" src="./resources/images/white-wall-2.jpg">
+				<img id="about-me-picture" src="./resources/images/white-wall-2.jpg" alt="about me picture">
 			</section>
 			<section id="projects">
 				<h2 id="projects-title">Projects</h2>
 				<section class="cards">
-					<article class="card">
+					<button id="previous-button"><</button>
+					<article class="main-card">
                			 <img class="card-img-top" alt="Thumbnail [100%x225]" src="./resources/images/crystal-ball.jpg">
                 		<div class="card-body">
                 			<h3>Fortune Teller</h3>
                   			<p class="card-text">First project! This is a java program that takes a users input and, based on that information, predicts their 'future' using different equations and logical considerations.</p>
                   			<div class="card-bottom">
-                  				<button class="btn" class="descriptionButton">Description</button>
+                  				<button class="btn descriptionButton">Description</button>
                       			<a href="https://github.com/AlexRichards9595/fortune-teller"><button type="button" class="btn">View</button></a>
                   			</div>
                			</div>
                		</article>
-               		<article class="card">
+               		<article class="main-card">
                			 <img class="card-img-top" alt="Thumbnail [100%x225]" src="./resources/images/virtualpet.jpg">
                 		<div class="card-body">
                 			<h3>Virtual Pet Shelter</h3>
                   			<p class="card-text">A java program that utilizes object oriented programming to add and remove different types of pets and take care of them according to the kind of pet that they are.</p>
                   			<div class="card-bottom">
-                  				<button class="btn" class="descriptionButton">Description</button>
+                  				<button class="btn descriptionButton">Description</button>
                       			<a href="https://github.com/AlexRichards9595/virtual-pet-amok"><button type="button" class="btn">View</button></a>
                   			</div>
                			</div>
                		</article>
-               		<article class="card">
+               		<article class="main-card">
                			 <img class="card-img-top" alt="Thumbnail [100%x225]" src="./resources/images/reviews.jpg">
                 		<div class="card-body">
                 			<h3>Reviews Site</h3>
                   			<p class="card-text">The beginning of building a site that utilizes Java and Spring MVC that allows the user to navigate through  different reviews of the Lord of the Rings movies. More to come here. </p>
                   			<div class="card-bottom">
-                  				<button class="btn" class="descriptionButton">Description</button>
+                  				<button class="btn descriptionButton">Description</button>
                       			<a href="https://github.com/AlexRichards9595/reviews"><button type="button" class="btn">View</button></a>
                   			</div>
                			</div>
                		</article>
+               		<button id="next-button">></button>
                	</section>
 			</section>
 		</main>
