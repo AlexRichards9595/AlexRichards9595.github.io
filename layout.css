@@ -9,16 +9,20 @@
 	text-align: center;
 	transform: rotate(0deg);
 	transition-duration: .2sec;
+	order: 2;
+	margin-right: 15rem;
 }
 .logo:hover {
 	transform: rotate(15deg);
 }
 .social-media {
 	display: flex;
+	order: 3;
 }
 nav {
 	display: flex;
 	justify-content: space-between;
+	order: 1;
 }
 nav ul {
 	display: flex;

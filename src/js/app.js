@@ -1,6 +1,6 @@
 toggleMenu = ul => {
-	if(ul.style.display==='flex') {ul.style.display = 'none'}
-	else {ul.style.display = 'flex'}
+	if(ul.style.visibility==='visible') {ul.style.visibility = 'hidden'}
+	else {ul.style.visibility = 'visible'}
 };
 const menuButtons = document.querySelectorAll('.nav-menu');
 if(menuButtons) menuButtons.forEach(button => {
