@@ -40,6 +40,19 @@ nextButton.addEventListener('click', () => plusSlideNumber(1));
 const previousButton = document.querySelector("#previous-button")
 previousButton.addEventListener('click', () => plusSlideNumber(-1));
 
-
+const modalButton = document.querySelector(".modal-button")
+const modal = document.querySelector(".modal-box")
+const closeButton = document.querySelector(".modal-close")
+const toggleModal = () => {
+	modal.classList.toggle("show-modal");
+}
+const windowOnClick = (event) => {
+	if (event.target === modal) {
+		toggleModal();
+	}
+}
+modalButton.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener("click", windowOnClick);
 
 

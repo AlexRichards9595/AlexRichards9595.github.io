@@ -22,7 +22,6 @@ nav {
 }
 nav ul {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 }
 .container {
@@ -68,6 +67,7 @@ main{
 	align-items: center;
 	flex-direction: column;
 }
+
 #projects {
 	display: flex;
 	flex-direction: column;
