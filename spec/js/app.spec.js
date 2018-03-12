@@ -2,23 +2,15 @@ describe('My Application', () => {
 	describe('toggleMenu', () => {
 		it('shows menu when menu button is clicked', () => {
 			const navUl = document.createElement("ul");
-			navUl.style.display = 'none';
+			navUl.style.visibility = 'hidden';
 			toggleMenu(navUl);
-			expect(navUl.style.display).toEqual('flex');
+			expect(navUl.style.visibility).toEqual('visible');
 		});
 		it('hides menu when menu button is clicked', () => {
 			const navUl = document.createElement("ul");
-			navUl.style.display = 'flex';
+			navUl.style.visibility = 'visible';
 			toggleMenu(navUl);
-			expect(navUl.style.display).toEqual('none');
-		});
-	});
-	describe('plusSlideNumber', () => {
-		it('adds one to the slide index', () => {
-			const slideIndex = 1;
-			beforeTest = slideIndex;
-			const afterTest = plusSlideNumber(slideIndex);
-			expect(afterTest-beforeTest).toEqual(1);
+			expect(navUl.style.visibility).toEqual('hidden');
 		});
 	});
 });

@@ -74,8 +74,7 @@ footer {
 	background-color: white;
 	color: black;
 	border-radius: 5px;
-/*	box-shadow: 6px 5px 9px 1px grey;
-*/	max-width: 300px;
+	max-width: 300px;
 }
 nav ul a {
 	text-decoration: none;
@@ -151,11 +150,9 @@ ul {
 	height: 225px; 
 	width: 100%;
 	display: block;
-	border-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
-.main-card .card-img-top {
-/*	box-shadow: 6px 5px 9px 1px grey;
-*/}
 .btn {
     background-color: white;
     border-radius: 5px;

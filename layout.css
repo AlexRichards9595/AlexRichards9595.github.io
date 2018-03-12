@@ -111,4 +111,7 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 }
+footer .nav-menu {
+	margin-left: 15rem;
+}
 
