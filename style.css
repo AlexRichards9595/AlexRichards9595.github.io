@@ -19,7 +19,7 @@ h2 {
     transform: translateX(0);
   }
 }
-@keyframes slideInFromRight {
+@keyframes slideInFromBottom {
 	0% {
 		transform: translateY(200%);
 	}
@@ -34,7 +34,7 @@ header, footer {
 	animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 main {
-	animation: 1s ease-out 0s 1 slideInFromRight;
+	animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
 .nav-menu {
@@ -47,13 +47,26 @@ main {
 	background-color: black;
 	color: white;
 	text-align: center; 
+	z-index: 1;
 }
 button:focus {
 	outline:0;
 }
-nav ul {
+nav {
+	overflow: hidden;
+}
+ nav ul {
+ 	transition-duration: .5s;
+}
+.hidden-menu {
 	visibility: hidden;
 	margin: auto;
+	 transform: translateX(-100%);
+}
+.show-menu {
+	visibility: visible;
+	margin: auto;
+	transform: translateX(0);
 }
 .social-media-images {
 	height: 40px;
@@ -68,6 +81,9 @@ nav ul {
 }
 #home {
 	background-color: white;
+	/*background-image: url("./resources/images/home-picture.jpg");
+	width: 100%;
+	height: 100%;*/
 }
 .home-text h3 {
 	margin-bottom: 1rem;
@@ -91,7 +107,7 @@ nav ul {
 	border-radius: 5px;
 	max-width: 300px;
 }
-nav ul a {
+ul a {
 	text-decoration: none;
 	color: white;
 }
@@ -191,4 +207,10 @@ ul {
 #next-button:hover, #previous-button:hover {
 	transition: all .2s ease-in-out; 
     transform: scale(1.2); 
+}
+footer ul {
+	display: flex;
+	justify-content: space-around;
+	width: 20rem;
+
 }

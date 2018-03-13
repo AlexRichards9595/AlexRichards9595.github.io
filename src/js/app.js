@@ -1,16 +1,16 @@
 
 
-toggleMenu = ul => {
-	if(ul.style.visibility==='visible') {ul.style.visibility = 'hidden'}
-		else {
-			ul.style.visibility = 'visible'
-		}
-	};
+// toggleMenu = ul => {
+// 	if(ul.style.visibility==='visible') {ul.style.visibility = 'hidden'}
+// 		else {
+// 			ul.style.visibility = 'visible'
+// 		}
+// 	};
 const menuButtons = document.querySelectorAll('.nav-menu');
 if(menuButtons) menuButtons.forEach(button => {
 	const navUl = button.parentNode.querySelector("nav ul");
 	button.addEventListener('click', () => {
-		toggleMenu(navUl)
+		navUl.classList.toggle("show-menu");
 	});
 });
 
