@@ -11,16 +11,32 @@ h2 {
 	font-size: 3rem;
 	font-family: 'Nanum Brush Script', cursive;
 }
-#next-button, #previous-button {
-	font-size: 3rem;
-	font-family: 'Nanum Brush Script', cursive;
-	background-color: white;
-	border: none;
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
-header {
+@keyframes slideInFromRight {
+	0% {
+		transform: translateY(200%);
+	}
+	0 {
+		transform: translateY(100%);
+	}
+}
+
+header, footer {
 	background-color: black;
 	color: white;
+	animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+main {
+	animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
 .nav-menu {
 	display:block;
  	height: 30px;
@@ -53,15 +69,14 @@ nav ul {
 #home {
 	background-color: white;
 }
+.home-text h3 {
+	margin-bottom: 1rem;
+}
 #about-me{
 	background-color: #F8F8F8;
 }
 #projects {
 	background-color: white;
-}
-footer {
-	background-color: black;
-	color: white;
 }
 .card {
 	background-color:#585858;
@@ -134,7 +149,7 @@ ul {
     width: auto;
     border-radius: 0.5rem;
 }
-.show-modal {
+.show-thing {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
@@ -167,8 +182,11 @@ ul {
 	background-color: dodgerblue;
 	color: white;
 }
-.home-text h3 {
-	margin-bottom: 1rem;
+#next-button, #previous-button {
+	font-size: 3rem;
+	font-family: 'Nanum Brush Script', cursive;
+	background-color: white;
+	border: none;
 }
 #next-button:hover, #previous-button:hover {
 	transition: all .2s ease-in-out; 

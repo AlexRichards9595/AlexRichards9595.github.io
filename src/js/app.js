@@ -1,11 +1,17 @@
+
+
 toggleMenu = ul => {
 	if(ul.style.visibility==='visible') {ul.style.visibility = 'hidden'}
-		else {ul.style.visibility = 'visible'}
+		else {
+			ul.style.visibility = 'visible'
+		}
 	};
 const menuButtons = document.querySelectorAll('.nav-menu');
 if(menuButtons) menuButtons.forEach(button => {
 	const navUl = button.parentNode.querySelector("nav ul");
-	button.addEventListener('click', () => {toggleMenu(navUl)});
+	button.addEventListener('click', () => {
+		toggleMenu(navUl)
+	});
 });
 
 	const descriptionButtons = document.querySelectorAll('.descriptionButton');
@@ -44,7 +50,7 @@ if(menuButtons) menuButtons.forEach(button => {
 		const modal = document.querySelector(".modal-box")
 		const closeButton = document.querySelector(".modal-close")
 		const toggleModal = () => {
-			modal.classList.toggle("show-modal");
+			modal.classList.toggle("show-thing");
 		}
 		const windowOnClick = (event) => {
 			if (event.target === modal) {
@@ -54,5 +60,6 @@ if(menuButtons) menuButtons.forEach(button => {
 		if(modalButton)modalButton.addEventListener('click', toggleModal);
 		if(closeButton)closeButton.addEventListener('click', toggleModal);
 		window.addEventListener("click", windowOnClick);
+
 
 
