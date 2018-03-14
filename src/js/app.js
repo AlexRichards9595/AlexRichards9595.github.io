@@ -84,6 +84,8 @@ var nodes = new vis.DataSet([{
 }, {
 	label: "JavaScript"
 }, {
+	label: "AJAX"
+}, {
 	label: "JQuery"
 }, ]);
 var edges = new vis.DataSet();
@@ -130,7 +132,6 @@ var network = new vis.Network(container, data, options);
 network.on("click", function(e) {
 	if (e.nodes.length) {
 		var node = nodes.get(e.nodes[0]);
-		// Do something
 		nodes.update(node);
 
 	}
