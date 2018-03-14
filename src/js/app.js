@@ -65,10 +65,11 @@ if (modalButton) modalButton.addEventListener('click', toggleModal);
 if (closeButton) closeButton.addEventListener('click', toggleModal);
 window.addEventListener("click", windowOnClick);
 
+let inited = false
+const init = () => {
+
 var nodes = new vis.DataSet([{
 	label: "Java"
-}, {
-	label: "Test Driven Development"
 }, {
 	label: "Spring MVC"
 }, {
@@ -77,6 +78,8 @@ var nodes = new vis.DataSet([{
 	label: "Hibernate"
 }, {
 	label: "HTML5"
+}, {
+	label: "Test Driven Development"
 }, {
 	label: "CSS3"
 }, {
@@ -136,3 +139,21 @@ network.on("click", function(e) {
 
 	}
 });
+
+  
+}
+
+const skills = document.querySelector(".skills");
+window.addEventListener('scroll', function() {
+  if ( inited ) {
+    return
+  }
+
+  if ( skills.offsetTop >= window.innerHeight + document.body.scrollTop ) {
+    inited = true
+    setTimeout(function() {
+    	init()
+}, 1000);
+  }
+});
+
