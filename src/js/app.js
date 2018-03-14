@@ -119,7 +119,7 @@ var options = {
 		minVelocity: .01,
 		solver: "repulsion",
 		repulsion: {
-			nodeDistance: 80
+			nodeDistance: 70
 		}
 	}
 };
