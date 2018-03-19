@@ -34,7 +34,8 @@ nav ul {
 }
 #index__container {
 	display: grid;
-	grid-template-rows: 75x auto;
+	grid-template-rows: 75px auto;
+	height: 100vh
 }
 .about__me__main{
 	display: grid;
@@ -43,10 +44,11 @@ nav ul {
 .projects__main{
 	display: grid;
 	grid-template-rows: repeat(1, minmax(100vh,auto));
+	height: calc(100vh-75px);
 }
 .index__main {
 	display: grid;
-	grid-template-rows: repeat(1, minmax(100vh,auto));
+	height: calc(100vh-75px);
 }
 #home {
 	display: flex;

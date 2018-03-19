@@ -7,14 +7,17 @@ if (menuButtons) menuButtons.forEach(button => {
 	});
 });
 
-const descriptionButtons = document.querySelectorAll('.descriptionButton');
+const descriptionButtons = document.querySelectorAll(".descriptionButton");
 if (descriptionButtons) descriptionButtons.forEach(descriptionButton => {
 	const cardDescription = descriptionButton.parentNode.parentNode.querySelector(".card__text");
 	descriptionButton.addEventListener('click', () => {
-		toggleMenu(cardDescription)
+		toggleDescription(cardDescription);
 	});
 });
 
+const toggleDescription = (element => {
+	element.classList.toggle("show__thing");
+});
 
 const projectCarousel = index => {
 	const projectCards = document.querySelectorAll('.main__card');
@@ -45,20 +48,7 @@ if (nextButton) nextButton.addEventListener('click', () => plusSlideNumber(1));
 const previousButton = document.querySelector("#previous__button")
 if (previousButton) previousButton.addEventListener('click', () => plusSlideNumber(-1));
 
-const modalButton = document.querySelector(".modal__button")
-const modal = document.querySelector(".modal__box")
-const closeButton = document.querySelector(".modal__close")
-const toggleModal = () => {
-	modal.classList.toggle("show__thing");
-}
-const windowOnClick = (event) => {
-	if (event.target === modal) {
-		toggleModal();
-	}
-}
-if (modalButton) modalButton.addEventListener('click', toggleModal);
-if (closeButton) closeButton.addEventListener('click', toggleModal);
-window.addEventListener("click", windowOnClick);
+
 
 let inited = false
 const init = () => {
@@ -139,12 +129,13 @@ network.on("click", function(e) {
 }
 
 const skills = document.querySelector(".skills");
-window.addEventListener('scroll', function() {
+
+if (skills) window.addEventListener('scroll', function() {
   if ( inited ) {
     return
   }
 
-  if ( skills.offsetTop >= window.innerHeight + document.body.scrollTop ) {
+  if (skills.offsetTop >= window.innerHeight + document.body.scrollTop ) {
     inited = true
     setTimeout(function() {
     	init()
