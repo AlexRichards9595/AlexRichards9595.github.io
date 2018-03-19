@@ -1,20 +1,15 @@
-// toggleMenu = ul => {
-// 	if(ul.style.visibility==='visible') {ul.style.visibility = 'hidden'}
-// 		else {
-// 			ul.style.visibility = 'visible'
-// 		}
-// 	};
-const menuButtons = document.querySelectorAll('.nav-menu');
+
+const menuButtons = document.querySelectorAll('.nav__menu');
 if (menuButtons) menuButtons.forEach(button => {
 	const navUl = button.parentNode.querySelector("nav ul");
 	button.addEventListener('click', () => {
-		navUl.classList.toggle("show-menu");
+		navUl.classList.toggle("show__menu");
 	});
 });
 
 const descriptionButtons = document.querySelectorAll('.descriptionButton');
 if (descriptionButtons) descriptionButtons.forEach(descriptionButton => {
-	const cardDescription = descriptionButton.parentNode.parentNode.querySelector(".card-text");
+	const cardDescription = descriptionButton.parentNode.parentNode.querySelector(".card__text");
 	descriptionButton.addEventListener('click', () => {
 		toggleMenu(cardDescription)
 	});
@@ -22,7 +17,7 @@ if (descriptionButtons) descriptionButtons.forEach(descriptionButton => {
 
 
 const projectCarousel = index => {
-	const projectCards = document.querySelectorAll('.main-card');
+	const projectCards = document.querySelectorAll('.main__card');
 	if (projectCards) projectCards.forEach(card => {
 		if (index > projectCards.length) {
 			slideIndex = 1
@@ -45,16 +40,16 @@ const plusSlideNumber = (n) => {
 	projectCarousel(slideIndex += n);
 }
 
-const nextButton = document.querySelector("#next-button")
+const nextButton = document.querySelector("#next__button")
 if (nextButton) nextButton.addEventListener('click', () => plusSlideNumber(1));
-const previousButton = document.querySelector("#previous-button")
+const previousButton = document.querySelector("#previous__button")
 if (previousButton) previousButton.addEventListener('click', () => plusSlideNumber(-1));
 
-const modalButton = document.querySelector(".modal-button")
-const modal = document.querySelector(".modal-box")
-const closeButton = document.querySelector(".modal-close")
+const modalButton = document.querySelector(".modal__button")
+const modal = document.querySelector(".modal__box")
+const closeButton = document.querySelector(".modal__close")
 const toggleModal = () => {
-	modal.classList.toggle("show-thing");
+	modal.classList.toggle("show__thing");
 }
 const windowOnClick = (event) => {
 	if (event.target === modal) {
@@ -124,7 +119,7 @@ var options = {
 		minVelocity: .01,
 		solver: "repulsion",
 		repulsion: {
-			nodeDistance: 70
+			nodeDistance: 65
 		}
 	}
 };
@@ -156,4 +151,19 @@ window.addEventListener('scroll', function() {
 }, 1000);
   }
 });
+
+// var indexMain = document.querySelector(".index__main");
+// // indexMain.style.height = "100vh";
+// // indexMain.style.width = "100vw";
+// // document.body.appendChild(div);
+// indexMain.addEventListener('mousemove', (event) => {
+// 	console.log(event);
+// 	var x = event.clientX;
+// 	var y = event.clientY;
+// 	var bX = x/2;
+// 	var bY = y/2;
+// 	// indexMain.textContent = x + ", " + y;
+// 	indexMain.style.backgroundColor = 'rgb(' + bX + ", " + bY + ', 50';
+// 	// indexMain.style.opacity = 0.99;
+// }, false);
 

@@ -1,4 +1,4 @@
-.header-container {
+.header__container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -10,12 +10,12 @@
 	transform: rotate(0deg);
 	transition-duration: .2sec;
 	order: 2;
-	margin-right: 15rem;
+	margin-right: 10rem;
 }
 .logo:hover {
 	transform: rotate(15deg);
 }
-.social-media {
+.social__media {
 	display: flex;
 	order: 3;
 }
@@ -30,9 +30,13 @@ nav ul {
 }
 .container {
 	display: grid;
-	grid-template-rows: 75px auto 75px;
+	grid-template-rows: 75px auto 40px;
 }
-main{
+#index__container {
+	display: grid;
+	grid-template-rows: 75x auto;
+}
+.about__me__main{
 	display: grid;
 	grid-template-rows: repeat(3, minmax(100vh, auto));
 }
@@ -40,33 +44,22 @@ main{
 	display: grid;
 	grid-template-rows: repeat(1, minmax(100vh,auto));
 }
+.index__main {
+	display: grid;
+	grid-template-rows: repeat(1, minmax(100vh,auto));
+}
 #home {
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: auto;
-}
-.home-center {
-	display: flex;
-	align-items: center;
+	justify-content: center;
 	margin: auto;
 	flex-direction: column;
 }
-#home-picture {
-	display: flex;
-	align-self: center;
-	margin: auto;
-}
-.home-text {
-	text-align: center;
-	align-self: center;
-}
-#about-me {
+#about__me {
 	display: flex;
 	justify-content: space-around;
 	flex-shrink: 2; 
 }
-#about-me-text {
+#about__me__text {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -76,7 +69,7 @@ main{
 	display: flex;
 	flex-direction: column;
 }
-#projects-title {
+#projects__title {
 	align-self: center;
 	margin-top: 3rem;
 }
@@ -90,20 +83,20 @@ main{
 	align-items: center;
 	justify-content: space-around;
 }
-.card-body {
+.card__body {
     padding: 19px;
 }
     .card p {
         padding: 5px;
     }
-.card, .main-card {
+.card, .main__card {
 	flex-direction: column;
 	text-align: center;
 	flex-grow: 1;
 	flex-basis: 250px;
 	margin: 1rem;
 }
- .main-card {
+ .main__card {
 	display: none;
 }
 footer {
@@ -111,7 +104,7 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 }
-footer .nav-menu {
+footer .nav__menu {
 	margin-left: 15rem;
 }
 
