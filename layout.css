@@ -34,7 +34,7 @@ nav ul {
 }
 #index__container {
 	display: grid;
-	grid-template-rows: 75px auto;
+	grid-template-rows: 60px auto;
 	height: 100vh
 }
 .about__me__main{
