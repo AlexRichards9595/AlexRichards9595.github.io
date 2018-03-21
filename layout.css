@@ -76,7 +76,7 @@ nav ul {
 	margin-top: 3rem;
 }
 
-.cards {
+.cards, .project__cards {
 	display: flex;
 	flex-direction: row;
 	width: 75vw;
