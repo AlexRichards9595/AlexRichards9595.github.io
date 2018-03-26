@@ -200,6 +200,9 @@ ul {
 	color: black;
 	text-align: center;
 	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
 }
 .btn {
     background-color: white;
