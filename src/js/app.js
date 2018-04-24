@@ -70,6 +70,10 @@ var nodes = new vis.DataSet([{
 }, {
 	label: "FlexBox"
 }, {
+	label: "React"
+}, {
+	label: "Redux"
+}, {
 	label: "JavaScript"
 }, {
 	label: "AJAX"
@@ -125,7 +129,7 @@ network.on("click", function(e) {
 	}
 });
 
-  
+
 }
 
 const skills = document.querySelector(".skills");
@@ -157,4 +161,3 @@ if (skills) window.addEventListener('scroll', function() {
 // 	indexMain.style.backgroundColor = 'rgb(' + bX + ", " + bY + ', 50';
 // 	// indexMain.style.opacity = 0.99;
 // }, false);
-
