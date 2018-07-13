@@ -1,4 +1,19 @@
-
+// window.onscroll = function() {myFunction()};
+//
+// // Get the header
+// var header = document.getElementById("sidenav");
+//
+// // Get the offset position of the navbar
+// var sticky = header.offsetTop;
+//
+// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
 const menuButtons = document.querySelectorAll('.nav__menu');
 if (menuButtons) menuButtons.forEach(button => {
 	const navUl = button.parentNode.querySelector("nav ul");
@@ -78,6 +93,14 @@ var nodes = new vis.DataSet([{
 }, {
 	label: "AJAX"
 }, {
+	label: "RSpec"
+}, {
+	label: "Ruby"
+}, {
+	label: "Angular"
+}, {
+	label: "ServiceNow"
+}, {
 	label: "JQuery"
 }, ]);
 var edges = new vis.DataSet();
@@ -94,10 +117,10 @@ var options = {
 		borderWidth: 0,
 		shape: "circle",
 		color: {
-			background: '#F92C55',
+			background: '#31708E',
 			highlight: {
-				background: '#F92C55',
-				border: '#F92C55'
+				background: '#5085A5',
+				border: '#31708E',
 			}
 		},
 		font: {
