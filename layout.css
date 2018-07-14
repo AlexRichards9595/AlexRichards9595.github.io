@@ -26,6 +26,10 @@
 	align-items: center;
 	margin: auto;
 }
+.project__cards {
+	display: flex;
+	flex-wrap: wrap;
+}
 .education, .work {
 	width: 80vw;
 }
