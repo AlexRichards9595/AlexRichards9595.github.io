@@ -1,7 +1,9 @@
 // window.onscroll = function() {myFunction()};
-//
-// // Get the header
+
+// Get the header
 // var header = document.getElementById("sidenav");
+//
+//   // if (skills.offsetTop >= window.innerHeight + document.body.scrollTop )
 //
 // // Get the offset position of the navbar
 // var sticky = header.offsetTop;
@@ -14,55 +16,55 @@
 //     header.classList.remove("sticky");
 //   }
 // }
-const menuButtons = document.querySelectorAll('.nav__menu');
-if (menuButtons) menuButtons.forEach(button => {
-	const navUl = button.parentNode.querySelector("nav ul");
-	button.addEventListener('click', () => {
-		navUl.classList.toggle("show__menu");
-	});
-});
-
-const descriptionButtons = document.querySelectorAll(".descriptionButton");
-if (descriptionButtons) descriptionButtons.forEach(descriptionButton => {
-	const cardDescription = descriptionButton.parentNode.parentNode.querySelector(".card__text");
-	descriptionButton.addEventListener('click', () => {
-		toggleDescription(cardDescription);
-	});
-});
-
-const toggleDescription = (element => {
-	element.classList.toggle("show__thing");
-});
-
-const projectCarousel = index => {
-	const projectCards = document.querySelectorAll('.main__card');
-	if (projectCards) projectCards.forEach(card => {
-		if (index > projectCards.length) {
-			slideIndex = 1
-		}
-		if (index < 1) {
-			slideIndex = projectCards.length
-		}
-		for (var i = projectCards.length - 1; i >= 0; i--) {
-			projectCards[i].style.display = 'none';
-		}
-		projectCards[slideIndex - 1].style.display = 'flex';
-
-	});
-};
-
-let slideIndex = 1;
-projectCarousel(slideIndex);
-
-const plusSlideNumber = (n) => {
-	projectCarousel(slideIndex += n);
-}
-
-const nextButton = document.querySelector("#next__button")
-if (nextButton) nextButton.addEventListener('click', () => plusSlideNumber(1));
-const previousButton = document.querySelector("#previous__button")
-if (previousButton) previousButton.addEventListener('click', () => plusSlideNumber(-1));
-
+// const menuButtons = document.querySelectorAll('.nav__menu');
+// if (menuButtons) menuButtons.forEach(button => {
+// 	const navUl = button.parentNode.querySelector("nav ul");
+// 	button.addEventListener('click', () => {
+// 		navUl.classList.toggle("show__menu");
+// 	});
+// });
+//
+// const descriptionButtons = document.querySelectorAll(".descriptionButton");
+// if (descriptionButtons) descriptionButtons.forEach(descriptionButton => {
+// 	const cardDescription = descriptionButton.parentNode.parentNode.querySelector(".card__text");
+// 	descriptionButton.addEventListener('click', () => {
+// 		toggleDescription(cardDescription);
+// 	});
+// });
+//
+// const toggleDescription = (element => {
+// 	element.classList.toggle("show__thing");
+// });
+//
+// const projectCarousel = index => {
+// 	const projectCards = document.querySelectorAll('.main__card');
+// 	if (projectCards) projectCards.forEach(card => {
+// 		if (index > projectCards.length) {
+// 			slideIndex = 1
+// 		}
+// 		if (index < 1) {
+// 			slideIndex = projectCards.length
+// 		}
+// 		for (var i = projectCards.length - 1; i >= 0; i--) {
+// 			projectCards[i].style.display = 'none';
+// 		}
+// 		projectCards[slideIndex - 1].style.display = 'flex';
+//
+// 	});
+// };
+//
+// let slideIndex = 1;
+// projectCarousel(slideIndex);
+//
+// const plusSlideNumber = (n) => {
+// 	projectCarousel(slideIndex += n);
+// }
+//
+// const nextButton = document.querySelector("#next__button")
+// if (nextButton) nextButton.addEventListener('click', () => plusSlideNumber(1));
+// const previousButton = document.querySelector("#previous__button")
+// if (previousButton) previousButton.addEventListener('click', () => plusSlideNumber(-1));
+//
 
 
 let inited = false
@@ -79,7 +81,7 @@ var nodes = new vis.DataSet([{
 }, {
 	label: "HTML5"
 }, {
-	label: "Test Driven Development"
+	label: "Unit Testing"
 }, {
 	label: "CSS3"
 }, {
@@ -88,6 +90,8 @@ var nodes = new vis.DataSet([{
 	label: "React"
 }, {
 	label: "Redux"
+}, {
+	label: "Ruby on Rails"
 }, {
 	label: "JavaScript"
 }, {
@@ -155,7 +159,7 @@ network.on("click", function(e) {
 
 }
 
-const skills = document.querySelector(".skills");
+const skills = document.querySelector(".skills-title");
 
 if (skills) window.addEventListener('scroll', function() {
   if ( inited ) {
@@ -166,7 +170,7 @@ if (skills) window.addEventListener('scroll', function() {
     inited = true
     setTimeout(function() {
     	init()
-}, 1000);
+}, 2000);
   }
 });
 

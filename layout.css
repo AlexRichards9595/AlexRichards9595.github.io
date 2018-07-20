@@ -8,17 +8,19 @@
 }
 .index__main {
 	display: grid;
-		grid-template-rows: repeat(5, minmax(100vh, auto));
+		grid-template-rows: repeat(5, minmax(100vh, auto)) 75px;
 }
 .home {
 	display: flex;
 	justify-content: space-around;
 }
-#about__me {
+.about__me__container {
 	display: flex;
 	justify-content: space-around;
 	flex-shrink: 2;
+	position: relative;
 }
+
 .experience {
 	display: flex;
 	justify-content: flex-start;
@@ -68,7 +70,11 @@
 	justify-content: space-around;
 	width: 80vw;
 }
-
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 /*
 #projects__title {
 	align-self: center;

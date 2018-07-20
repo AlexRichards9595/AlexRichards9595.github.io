@@ -6,9 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
 
-	<title> Alex Richards | Home</title>
+	<title> Alex Richards</title>
 	<!-- <link rel="shortcut icon" type="image/x-icon" href="deci-logo-png" /> -->
-
+	<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./layout.css">
 	<link rel="stylesheet" href="./style.css">
 </head>
@@ -18,24 +19,27 @@
 			<section class ="home" id="home">
 				<div class="home__container">
 					<h2>Alex Richards</h2>
+						<img class="big-logo" src="./resources/images/ARlogo-square.png" alt="Big Logo">
 					<a href="mailto:alex.richards9595@gmail.com"><button class="contact_button">Contact</button></a>
 				</div>
 			</section>
 			<section id="about__me">
-					<div id="about__me__text">
-						<h1>About Me</h1>
-						<p>My name is Alex Richards and I've been married a little over a year to that girl over there. I love camping and climbing mountains when I get the chance to get out of Ohio. I've hiked Long's peak in Colorado, Mt. Marcy in New York and tried not to fall off of Angel's landing in Zion. I also enjoy talking about philosophy to whoever will listen.</p>
+				<!-- <div class="sidenav" id="sidenav">
+					<a href="#home">Home</a>
+					<a href="#about__me">About Me</a>
+					<a href="#experience">Experience</a>
+					<a href="#skills">Skills</a>
+					<a href="#projects">Projects</a>
+				</div> -->
+				<div class="about__me__container">
+						<div id="about__me__text">
+							<h1 id="about__me__title">About Me</h1>
+							<p>My name is Alex Richards and I've been married a little over a year to that girl over there. I love camping and climbing mountains when I get the chance to get out of Ohio. I've hiked Long's peak in Colorado, Mt. Marcy in New York and tried not to fall off of Angel's landing in Zion. I also enjoy talking about philosophy to whoever will listen.</p>
+						</div>
+						<div class="about__me__picture__container">
+							<img class="about__me__picture" src="./resources/images/white-wall-2.jpg" alt="about me picture">
+						</div>
 					</div>
-					<div class="about__me__picture__container">
-						<img class="about__me__picture" src="./resources/images/white-wall-2.jpg" alt="about me picture">
-					</div>
-					<!-- <div class="sidenav" id="sidenav">
-						<a href="#home">Home</a>
-						<a href="#about__me">About Me</a>
-						<a href="#experience">Experience</a>
-						<a href="#skills">Skills</a>
-						<a href="#projects">Projects</a>
-					</div> -->
 				</section>
 				<section class= "experience" id="experience">
 					<h1 class= 'experience_title'>Experience</h1>
@@ -59,7 +63,7 @@
 								</div>
 								<div class="education_description">
 									<p class="experience_header">Bachelors - Philosophy </p>
-									<p>Graduated with a Bachelors in Philosophy with Cum Laude honors with a focus in Ethics and Logic</p>
+									<p>Graduated with a Bachelors in Philosophy with Cum Laude honors with a focus in Ethics and Logic. Vice President of the University's Philosophy Club.</p>
 								</div>
 							</div>
 							<div class="education_card">
@@ -69,7 +73,7 @@
 								</div>
 								<div class="education_description">
 									<p class="experience_header">Associates of Arts </p>
-									<p>Something nifty about C-State</p>
+									<p>The really cool thing about this is that I saved a bunch of money.</p>
 								</div>
 							</div>
 						</div>
@@ -84,7 +88,7 @@
 								</div>
 								<div class="work_description">
 									<p class="experience_header">Associate ServiceNow Developer</p>
-									<p>Did a bunch of things with ServiceNow</p>
+									<p>Managed and maintained Change Management Database (CMDB). Planned, developed and deployed applications and enhancements using ServiceNow, JavaScript and Angular frameworks. Planned and oversaw agile sprints, ensured pacing of task completion and team’s work velocity. Performed routine incidents, change requests and debugging.</p>
 								</div>
 							</div>
 							<div class="work_card">
@@ -111,7 +115,7 @@
 					</article>
 				</section>
 				<section class="skills" id="skills">
-					<h1 "skills-title">Skills</h1>
+					<h1 class = "skills-title">Skills</h1>
 					<div id="bubbles"></div>
 				</section>
 				<section class="projects" id="projects">
@@ -124,7 +128,7 @@
 							</a>
 							<div class="overlay">
 								<p class="text card_header">Fund It</p>
-								<p class="text">Single page application that sorts a savings accoun.t</p>
+								<p class="text">Single page application that sorts a savings account.</p>
 								<p class="text tools">Tools</p>
 								<p class="bottom_text">Java, Spring MVC, Google Charts, REST, JavaScript, AJAX</p>
  							</div>
@@ -155,6 +159,11 @@
 						</article>
 					</article>
 				</section>
+				<footer>
+					<a href="https://www.linkedin.com/in/alexrichards9595" target="_blank"><img class="social__media__images" src="./resources/images/linkedin-icon.svg" alt="linkedin logo"></a>
+					<img class="footer-logo"src="./resources/images/logo-white.png" alt="Logo small">
+					<a href="https://github.com/AlexRichards9595" target="_blank"><img class="social__media__images" src="./resources/images/github.svg" alt="github logo"></a>
+				</footer>
 		</main>
 	</div>
 		<script src="./src/js/app.js"></script>
