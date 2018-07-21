@@ -58,6 +58,10 @@ button:focus {
 	transition: all .2s ease-in-out;
     transform: scale(1.1);
 }
+.name {
+	color: #2c3539;
+	font-size: 5rem;
+}
 .home {
 	color: dimgrey;
 	text-align: center;
@@ -102,7 +106,7 @@ button:focus {
 	height: 50vh;
 	border-radius: 5px;
 	box-shadow: 6px 5px 9px 1px grey;
-	margin: 2rem 0 2rem 0;
+	margin: 3rem 2rem 3rem 2rem;
 }
 .overlay {
   position: absolute;
@@ -190,5 +194,5 @@ footer {
 	left: 0;
 	right: 0;
 	transform: rotate(-45deg);
-	box-shadow: 0px 0px 20px 11px grey
+	box-shadow: 1px 17px 30px 5px grey;
 }
