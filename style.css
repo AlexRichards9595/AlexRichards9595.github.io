@@ -20,41 +20,6 @@ h1 {
 	margin-bottom: 1rem;
 	color: #2c3539;
 }
-.not-sticky {
-		position: fixed;
-	  width: 130px;
-		z-index: 3000;
-		background: #474853;
-		overflow-x: hidden;
-		padding: 8px 0;
-		border-radius: 5px;
-}
-.sticky {
-    width: 130px;
-    position: fixed;
-    z-index: 3000;
-    top: 40px;
-    right:20px;
-    background: #474853;
-    overflow-x: hidden;
-    padding: 8px 0;
-		border-radius: 5px;
-}
-
-.sidenav a {
-		display: flex;
-		justify-content: center;
-		align-self: center;
-		flex-direction: column;
-    /* padding: 6px 8px 6px 16px; */
-    text-decoration: none;
-    color:white;
-		margin: 2rem 0 2rem 0;
-		align-self: center;
-}
-.sidenav a:hover {
-	color: lightgray;
-}
 .experience h2 {
 	margin-bottom: 1.5rem;
 }
@@ -74,6 +39,10 @@ main {
 	color: dimgrey;
 	text-align: center;
 	z-index: 1;
+}
+.contact_button:hover {
+	background-color: dimgrey;
+	color: white;
 }
 button:focus {
 	outline:0;
