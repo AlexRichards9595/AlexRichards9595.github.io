@@ -1,0 +1,141 @@
+.container-index {
+    display: flex;
+    flex-direction:  column;
+    margin: auto;
+    background-color: white;
+    height: auto;
+    min-height: 80vh;
+    width: 80%;
+}
+
+.index-main-header {
+    color: grey;
+}
+
+.index-main-header h1 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.index-main-header h3 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.index-filters-top {
+    max-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    margin-bottom: .5rem;
+}
+
+.index-filters-top-left, .index-filters-top-right {
+    opacity: .4;
+}
+
+.index-filters-top-left:hover, .index-filters-top-right:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.index-filters-top-right:hover h2 {
+    background-color: grey;
+    transition: 1s;
+}
+
+.index-filters-top-left:hover h2 {
+    background-color: grey;
+    transition: 1s;
+}
+
+.index-filters-top-left {
+    position: relative;
+}
+
+.index-filters-top-left h2 {
+    margin: 0;
+    width: 100%;
+    /*background-color: grey;*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+}
+
+.index-filters-top-right {
+    position: relative;
+}
+
+.index-filters-top-right h2 {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    /*background-color: grey;*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+
+.index-filters-top-left img {
+    height: 100%;
+    width: 40vw;
+}
+
+.index-filters-top-right img {
+    height: 100%;
+    width: 40vw;
+}
+
+.index-filters-bottom {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    margin-bottom: 1rem;
+}
+
+.minor-filters {
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+    border-right: solid 1px white;
+}
+
+.minor-filters:last-child {
+    border-right: none;
+}
+
+.index-search {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    margin-bottom: 1rem;
+}
+
+.index-search input {
+    border: solid 1px black;
+    width: 40vw;
+    border-right: none;
+}
+
+.index-search ::placeholder {
+    color: lightgray;
+    font-size: large;
+}
+
+.index-search img {
+    height: 5vh;
+    width: 5vh;
+    border: solid 1px black;
+    border-left: none;
+    box-sizing: border-box;
+
+}
