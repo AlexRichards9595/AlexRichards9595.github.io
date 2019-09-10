@@ -142,6 +142,8 @@
     border: solid 1px black;
     width: 40vw;
     border-right: none;
+    padding-left: .5rem;
+    font-size: large;
 }
 
 .index-search ::placeholder {
