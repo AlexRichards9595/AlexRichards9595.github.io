@@ -63,7 +63,6 @@
 .index-filters-top-left h2 {
     margin: 0;
     width: 100%;
-    /*background-color: grey;*/
     position: absolute;
     left: 0;
     bottom: 0;
@@ -158,4 +157,28 @@
     border-left: none;
     box-sizing: border-box;
 
+}
+
+.index-filters-books-hidden {
+    display: none;
+}
+
+.index-filters-books {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: grey;
+    width: 80vw;
+    color: white;
+    height: 20vh;
+}
+
+.index-filters-book {
+    padding: .25rem;
+    border: solid grey 1px;
+    box-sizing: border-box;
+}
+
+.index-filters-book:hover {
+    border: solid white 1px;
 }

@@ -7,7 +7,6 @@
     <link rel = "stylesheet" type = "text/css" href = "index_css/index_body.css" />
     <link rel = "stylesheet" type = "text/css" href = "index_css/index_footer.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <header>
@@ -45,16 +44,18 @@
             <h1>Teachings</h1>
             <h3>Find free Bible teachings from a variety of pastors. Quickly filter by Bible book and chapter.</h3>
         </div>
-        <div class="index-filters-top">
-            <div class="index-filters-top-left">
-                <img src="assets/old-testament.jpg" alt="old testament">
-                <h2>Old Testament</h2>
+        <div id="index-filters-top" class="index-filters-top">
+            <div class="index-filters-top-left" onclick="Expand('OT')">
+                <img id="ot-img" src="assets/old-testament.jpg" alt="old testament">
+                <h2 id="ot-header">Old Testament</h2>
             </div>
             <div class="index-filters-top-middle"></div>
-            <div class="index-filters-top-right">
-                <img src="assets/new-testament.jpeg" alt="new testament">
-                <h2>New Testament</h2>
+            <div class="index-filters-top-right" onclick="Expand('NT')">
+                <img id="nt-img" src="assets/new-testament.jpeg" alt="new testament">
+                <h2 id="nt-header">New Testament</h2>
             </div>
+        </div>
+        <div id="selected-container" class="index-filters-books-hidden">
         </div>
         <div class="index-filters-bottom">
             <p class="minor-filters">Topical</p>
@@ -81,5 +82,6 @@
         <p>Xenos Christian Fellowship (See our usage guidelines or privacy policy.)</p>
     </div>
 </footer>
+<script src="js/index.js"></script>
 </body>
 </html>
