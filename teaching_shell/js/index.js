@@ -1,6 +1,47 @@
-const Expand = (genre) => {
+const Expand = (selected, notselected) => {
 
-    genre === "OT" ? BuildTheDiv(OTBooks) : BuildTheDiv(NTBooks);
+    if (document.getElementById(selected + "-img").className === "filter-img-selected") {
+        SetUnclickedStyling(selected);
+        document.getElementById("selected-container").className = "index-filters-books-hidden";
+
+        const image = document.getElementById("index-filters-top");
+        image.className = "index-filters-top";
+    }
+    else {
+        const image = document.getElementById("index-filters-top");
+        image.className = "index-filters-top-selected";
+
+        selected === "OT" ? BuildTheDiv(OTBooks) : BuildTheDiv(NTBooks);
+
+        SetClickedStyling(selected);
+
+        SetUnclickedStyling(notselected);
+    }
+
+
+
+};
+
+const SetUnclickedStyling = (notselected) => {
+    const image = document.getElementById(notselected + "-img");
+    image.className = "filter-img";
+
+    const header = document.getElementById(notselected + "-header");
+    header.style.backgroundColor = "";
+    //
+    // const span = document.getElementById(notselected + "-span");
+    // span.className = "span-hidden";
+};
+
+const SetClickedStyling = (selected) => {
+    const image = document.getElementById(selected + "-img");
+    image.className = "filter-img-selected";
+
+    const header = document.getElementById(selected + "-header");
+    header.style.backgroundColor = "grey";
+
+    // const span = document.getElementById(selected + "-span");
+    // span.className = "OT-span-show";
 };
 
 const BuildTheDiv = (list) => {
