@@ -128,3 +128,31 @@ const NTBooks = [
     "Jude",
     "Revelation"
 ];
+
+const changeColor = (id) => {
+    const element = document.getElementById(id);
+
+    if (element.classList.contains("minor-filters-grey")) {
+        element.classList.remove("minor-filters-grey");
+        element.classList.add("minor-filters-purple");
+        return;
+    }
+
+    if (element.classList.contains("minor-filters-purple")) {
+        element.classList.remove("minor-filters-purple");
+        element.classList.add("minor-filters-greenish");
+        return;
+    }
+
+    if (element.classList.contains("minor-filters-greenish")) {
+        element.classList.remove("minor-filters-greenish");
+        element.classList.add("minor-filters-bluish");
+        return;
+    }
+
+    if (element.classList.contains("minor-filters-bluish")) {
+        element.classList.remove("minor-filters-bluish");
+        element.classList.add("minor-filters-grey");
+        return
+    }
+};

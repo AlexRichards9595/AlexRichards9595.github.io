@@ -119,15 +119,32 @@
 }
 
 .minor-filters {
-    color: white;
-    background-color: grey;
     text-align: center;
+    color: white;
     height: 100%;
     width: 25%;
     margin: 0 .25rem 0 0;
     padding: 1rem;
     border: 1px solid white;
     box-sizing: border-box;
+    font-size: large;
+    outline: none;
+}
+
+.minor-filters-grey {
+    background-color: grey;
+}
+
+.minor-filters-purple {
+    background-color: #6C3032;
+}
+
+.minor-filters-greenish {
+    background-color: #B2C991;
+}
+
+.minor-filters-bluish {
+    background-color: #83adb5;
 }
 
 .minor-filters:hover{
