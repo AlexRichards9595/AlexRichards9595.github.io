@@ -92,7 +92,7 @@ button:focus {
 	margin: auto;
 }
 #about__me__text p {
-	margin-top: 4rem;
+	/*margin-top:3rem;*/
 	width: 80%
 }
 .card__img {

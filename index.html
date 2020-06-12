@@ -7,7 +7,6 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.js"></script>
 
 	<title> Alex Richards</title>
-	<!-- <link rel="shortcut icon" type="image/x-icon" href="deci-logo-png" /> -->
 	<link rel="shortcut icon" href="./resources/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./layout.css">
@@ -24,60 +23,22 @@
 				</div>
 			</section>
 			<section id="about__me">
-				<!-- <div class="sidenav" id="sidenav">
-					<a href="#home">Home</a>
-					<a href="#about__me">About Me</a>
-					<a href="#experience">Experience</a>
-					<a href="#skills">Skills</a>
-					<a href="#projects">Projects</a>
-				</div> -->
 				<div class="about__me__container">
-						<div id="about__me__text">
-							<h1 id="about__me__title">About Me</h1>
-							<p>My name is Alex Richards and I've been married a little over a year to that girl over there. I love camping and climbing mountains when I get the chance to get out of Ohio. I've hiked Long's peak in Colorado, Mt. Marcy in New York and tried not to fall off of Angel's landing in Zion. I also enjoy talking about philosophy to whoever will listen.</p>
-						</div>
-						<div class="about__me__picture__container">
-							<img class="about__me__picture" src="./resources/images/white-wall-2.jpg" alt="about me picture">
-						</div>
+					<div id="about__me__text">
+						<h1 id="about__me__title">About Me</h1>
+						<p>My name is Alex Richards and I've been married a little over a year to that girl over there. I love camping and climbing mountains when I get the chance to get out of Ohio. I've hiked Long's peak in Colorado, Mt. Marcy in New York and tried not to fall off of Angel's landing in Zion. I also enjoy talking about philosophy to whoever will listen.</p>
 					</div>
-				</section>
+					<div class="about__me__picture__container">
+						<img class="about__me__picture" src="./resources/images/white-wall-2.jpg" alt="about me picture">
+					</div>
+				</div>
+			</section>
+			<section class="skills" id="skills">
+				<h1 class = "skills-title">Skills</h1>
+				<div id="bubbles"></div>
+			</section>
 				<section class= "experience" id="experience">
 					<h1 class= 'experience_title'>Experience</h1>
-					<article class="education">
-						<h2>Education</h2>
-						<div class="education_container">
-							<div class="education_card">
-								<div class="education_title">
-									<p class="experience_header">We Can Code IT</p>
-									<p>January 2018 - April 2018</p>
-								</div>
-								<div class="education_description">
-									<p class="experience_header">Certificate in Software Development</p>
-									<p>Engaged in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development from expert instructors and intensive hands-on projects. </p>
-								</div>
-							</div>
-							<div class="education_card">
-								<div class="education_title">
-									<p class="experience_header">The Ohio State University</p>
-									<p>January 2013 - December 2015</p>
-								</div>
-								<div class="education_description">
-									<p class="experience_header">Bachelors - Philosophy </p>
-									<p>Graduated with a Bachelors in Philosophy with Cum Laude honors with a focus in Ethics and Logic. Vice President of the University's Philosophy Club.</p>
-								</div>
-							</div>
-							<div class="education_card">
-								<div class="education_title">
-									<p class="experience_header">Columbus State Community College</p>
-									<p>August 2011 - December 2012</p>
-								</div>
-								<div class="education_description">
-									<p class="experience_header">Associates of Arts </p>
-									<p>The really cool thing about this is that I saved a bunch of money.</p>
-								</div>
-							</div>
-						</div>
-					</article>
 					<article class="work">
 						<h2>Career</h2>
 						<div class="work_container">
@@ -113,50 +74,40 @@
 							</div>
 						</div>
 					</article>
-				</section>
-				<section class="skills" id="skills">
-					<h1 class = "skills-title">Skills</h1>
-					<div id="bubbles"></div>
-				</section>
-				<section class="projects" id="projects">
-					<h1 "projects-title">Projects</h1>
-					<article class="project__cards">
-						<article class="card">
-							<img class= "card__img" src="./resources/images/fund-it-project.PNG" alt="fund it screenshot" />
-							<a href="https://fund-it-app.herokuapp.com/">
-								<img class="goto" src="./resources/images/goto-icon.ico" alt="Goto button" />
-							</a>
-							<div class="overlay">
-								<p class="text card_header">Fund It</p>
-								<p class="text">Single page application that sorts a savings account.</p>
-								<p class="text tools">Tools</p>
-								<p class="bottom_text">Java, Spring MVC, Google Charts, REST, JavaScript, AJAX</p>
- 							</div>
-						</article>
-						<article class="card">
-							<img class= "card__img" src="./resources/images/reviews.jpg" alt="Reviews screenshot" />
-							<a href="https://the-books-review.herokuapp.com/books">
-								<img class="goto" src="./resources/images/goto-icon.ico" alt="Goto button" />
-							</a>
-							<div class="overlay">
-	 							<p class="text card_header">Book Reviews</p>
-								<p class="text">Sorts book reviews by author and genre.</p>
-								<p class="text tools">Tools</p>
-								<p class="bottom_text">Java, Spring MVC, Thymeleaf, REST, JavaScript, AJAX</p>
- 							</div>
-						</article>
-						<article class="card">
-							<img class= "card__img" src="./resources/images/file-cabinet.JPG" alt="Reviews screenshot" />
-							<a href="https://cabinet-welcome.herokuapp.com/">
-								<img class="goto" src="./resources/images/goto-icon.ico" alt="Goto button" />
-							</a>
-							<div class="overlay">
-	 							<p class="text card_header">File Cabinet</p>
-								<p class="text">Online File storage. Mock of Evernote/Google docs.</p>
-								<p class="text tools">Tools</p>
-								<p class="bottom_text">Ruby, Ruby on Rails, PostgreSQL Simple Forms, SCSS, HAML, Devise</p>
- 							</div>
-						</article>
+					<article class="education">
+						<h2>Education</h2>
+						<div class="education_container">
+							<div class="education_card">
+								<div class="education_title">
+									<p class="experience_header">We Can Code IT</p>
+									<p>January 2018 - April 2018</p>
+								</div>
+								<div class="education_description">
+									<p class="experience_header">Certificate in Software Development</p>
+									<p>Engaged in a full-time, 5-star-rated coding boot camp, learning agile full-stack software development from expert instructors and intensive hands-on projects. </p>
+								</div>
+							</div>
+							<div class="education_card">
+								<div class="education_title">
+									<p class="experience_header">The Ohio State University</p>
+									<p>January 2013 - December 2015</p>
+								</div>
+								<div class="education_description">
+									<p class="experience_header">Bachelors - Philosophy </p>
+									<p>Graduated with a Bachelors in Philosophy with Cum Laude honors with a focus in Ethics and Logic. Vice President of the University's Philosophy Club.</p>
+								</div>
+							</div>
+							<div class="education_card">
+								<div class="education_title">
+									<p class="experience_header">Columbus State Community College</p>
+									<p>August 2011 - December 2012</p>
+								</div>
+								<div class="education_description">
+									<p class="experience_header">Associates of Arts </p>
+									<p>The really cool thing about this is that I saved a bunch of money.</p>
+								</div>
+							</div>
+						</div>
 					</article>
 				</section>
 				<footer>

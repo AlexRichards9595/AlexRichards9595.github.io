@@ -8,7 +8,7 @@
 }
 .index__main {
 	display: grid;
-		grid-template-rows: repeat(5, minmax(100vh, auto)) 75px;
+		grid-template-rows: repeat(4, minmax(100vh, auto)) 75px;
 }
 .home {
 	display: flex;
@@ -52,65 +52,8 @@
 	width: 25vw;
 	margin-bottom: 1rem;
 }
-/* #about__me__text {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}*/
-
-.projects {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-
-}
-.project__cards {
-	display: flex;
-	justify-content: space-around;
-	width: 80vw;
-}
 footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
-/*
-#projects__title {
-	align-self: center;
-	margin-top: 3rem;
-}
-
-.cards, .project__cards {
-	display: flex;
-	flex-direction: row;
-	width: 75vw;
-	flex-wrap: wrap;
-	margin: auto;
-	align-items: center;
-	justify-content: space-around;
-}
-.card__body {
-    padding: 19px;
-}
-    .card p {
-        padding: 5px;
-    }
-.card, .main__card {
-	flex-direction: column;
-	text-align: center;
-	flex-grow: 1;
-	flex-basis: 250px;
-	margin: 1rem;
-}
- .main__card {
-	display: none;
-}
-footer {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-footer .nav__menu {
-	margin-left: 15rem;
-} */

@@ -73,15 +73,15 @@ const init = () => {
 var nodes = new vis.DataSet([{
 	label: "Java"
 }, {
-	label: "Spring MVC"
-}, {
 	label: "SQL"
 }, {
-	label: "Hibernate"
+	label: "AWS"
+}, {
+	label: "Go"
 }, {
 	label: "HTML5"
 }, {
-	label: "Unit Testing"
+	label: "TDD"
 }, {
 	label: "CSS3"
 }, {
@@ -91,21 +91,17 @@ var nodes = new vis.DataSet([{
 }, {
 	label: "Redux"
 }, {
-	label: "Ruby on Rails"
-}, {
 	label: "JavaScript"
 }, {
-	label: "AJAX"
+	label: "Jest"
 }, {
-	label: "RSpec"
-}, {
-	label: "Ruby"
+	label: "Enzyme"
 }, {
 	label: "Angular"
 }, {
 	label: "ServiceNow"
 }, {
-	label: "JQuery"
+	label: "ASP.NET"
 }, ]);
 var edges = new vis.DataSet();
 
