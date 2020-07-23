@@ -25,7 +25,13 @@ h1 {
 }
 .experience_header {
 	font-weight: bold;
-	margin-bottom: 1rem;
+	margin-bottom: .5rem;
+}
+.experience ul {
+	padding-left: 2rem;
+}
+.experience li {
+	margin-bottom: .5rem;
 }
 main {
 	animation: 1s ease-out 0s 1 slideInFromBottom;
