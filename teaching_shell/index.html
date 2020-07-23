@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xenos Teachings</title>
+    <link rel = "stylesheet" type = "text/css" href = "index_css/index_header.css" />
+    <link rel = "stylesheet" type = "text/css" href = "index_css/index_body.css" />
+    <link rel = "stylesheet" type = "text/css" href = "index_css/index_footer.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container-header">
+        <div class="logo-header">
+            <h1>XENOS</h1>
+            <h3>Christian Fellowship</h3>
+        </div>
+        <div class="nav-header">
+            <ul>
+                <li>About Xenos</li>
+                <li>News</li>
+                <li>Calendar</li>
+            </ul>
+            <div class="search-header">
+                <label>
+                    <input class="search-header-input" size="50" type="text">
+                </label>
+                <img class="search-header-button" src="./assets/search-button.png">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-header">
+        <p>Teachings</p>
+        <p>Home Groups</p>
+        <p>Classes</p>
+        <p>Summer Institute</p>
+        <p>Give</p>
+        <p>More...</p>
+    </nav>
+</header>
+<main>
+    <div class="container-index">
+        <div class="index-main-header">
+            <h1>Teachings</h1>
+            <h3>Find free Bible teachings from a variety of pastors. Quickly filter by Bible book and chapter.</h3>
+        </div>
+        <div id="index-filters-top" class="index-filters-top">
+            <div id="OT" class="index-filters-top-left" onclick="Expand('OT','NT')">
+                <img id="OT-img" class="filter-img" src="assets/old-testament.jpg" alt="old testament">
+                <h2 id="OT-header">Old Testament</h2>
+            </div>
+            <div class="index-filters-top-middle"></div>
+            <div class="index-filters-top-right" onclick="Expand('NT','OT')">
+                <img id="NT-img" class="filter-img" src="assets/new-testament.jpeg" alt="new testament">
+                <h2 id="NT-header">New Testament</h2>
+            </div>
+        </div>
+        <div id="selected-container" class="index-filters-books-hidden">
+            <div id="OT-span" class="span-hidden"></div>
+            <div id="NT-span" class="span-hidden"></div>
+        </div>
+        <div class="index-filters-bottom">
+            <button onclick="changeColor('Topical')" id="Topical" class="minor-filters minor-filters-grey">Topical</button>
+            <button onclick="changeColor('XSI')" id="XSI" class="minor-filters minor-filters-purple">Summer Institute</button>
+            <button onclick="changeColor('Spanish')" id="Spanish" class="minor-filters minor-filters-greenish">Spanish</button>
+            <button onclick="changeColor('Other')" id="Other" class="minor-filters minor-filters-bluish">Other</button>
+        </div>
+        <div class="index-search">
+            <input type="text" placeholder="Teaching Search...">
+            <img src="assets/search-button.png">
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-top">
+        <img src="assets/facebook-logo-in-circular-button-outlined-social-symbol.png">
+        <img src="assets/google-plus-circular-button.png">
+        <img src="assets/twitter-circular-button.png">
+        <img src="assets/new-email-with-circular-button.png">
+    </div>
+    <div class="footer-bottom">
+        <p>1340 Community Park Dr., Columbus OH 43229 (614) 823-6500</p>
+        <p>Questions or Feedback? Contact Us.</p>
+        <p>Xenos Christian Fellowship (See our usage guidelines or privacy policy.)</p>
+    </div>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>
