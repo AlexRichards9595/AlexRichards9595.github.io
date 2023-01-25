@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.f6a7495f.css",
-    "main.js": "/react-gh-pages/static/js/main.fb952a15.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js",
-    "static/media/LandingImage.jpg": "/react-gh-pages/static/media/LandingImage.9299c7546fa50cfeb1ab.jpg",
-    "static/media/Dwell_Sunburst_Light.png": "/react-gh-pages/static/media/Dwell_Sunburst_Light.5c8e45bde3b48ee84295.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.f6a7495f.css.map": "/react-gh-pages/static/css/main.f6a7495f.css.map",
-    "main.fb952a15.js.map": "/react-gh-pages/static/js/main.fb952a15.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.f6a7495f.css",
+    "main.js": "/static/js/main.6ae73576.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/LandingImage.jpg": "/static/media/LandingImage.9299c7546fa50cfeb1ab.jpg",
+    "static/media/Dwell_Sunburst_Light.png": "/static/media/Dwell_Sunburst_Light.5c8e45bde3b48ee84295.png",
+    "index.html": "/index.html",
+    "main.f6a7495f.css.map": "/static/css/main.f6a7495f.css.map",
+    "main.6ae73576.js.map": "/static/js/main.6ae73576.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f6a7495f.css",
-    "static/js/main.fb952a15.js"
+    "static/js/main.6ae73576.js"
   ]
 }
