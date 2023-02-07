@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6a7495f.css",
-    "main.js": "/static/js/main.6ae73576.js",
+    "main.css": "/static/css/main.549ece10.css",
+    "main.js": "/static/js/main.5a8aef3b.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/LandingImage.jpg": "/static/media/LandingImage.9299c7546fa50cfeb1ab.jpg",
     "static/media/Dwell_Sunburst_Light.png": "/static/media/Dwell_Sunburst_Light.5c8e45bde3b48ee84295.png",
     "index.html": "/index.html",
-    "main.f6a7495f.css.map": "/static/css/main.f6a7495f.css.map",
-    "main.6ae73576.js.map": "/static/js/main.6ae73576.js.map",
+    "main.549ece10.css.map": "/static/css/main.549ece10.css.map",
+    "main.5a8aef3b.js.map": "/static/js/main.5a8aef3b.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6a7495f.css",
-    "static/js/main.6ae73576.js"
+    "static/css/main.549ece10.css",
+    "static/js/main.5a8aef3b.js"
   ]
 }
