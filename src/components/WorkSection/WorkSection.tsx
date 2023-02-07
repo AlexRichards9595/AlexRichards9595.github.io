@@ -1,28 +1,49 @@
 import React, {FC, useEffect, useState} from 'react';
 import Tab from "../Tab/Tab";
-import NetJets from "../../images/netjets-vector-logo.png"
-import Accenture from "../../images/Accenture-Logo.png"
-import eFuse from "../../images/efuse.png"
-import Dwell from "../../images/Dwell_Sunburst_Light.png"
+import {employerData, reviewData} from "../../experienceData";
+import Review from "../Review/Review";
+import Dot from "../Dot/Dot";
 
 
 interface WorkProps {}
 
 const WorkSection: FC<WorkProps> = () => {
-  const [selected, setSelected] = useState<string>();
+  const [companySelected, setCompanySelected] = useState<string>("");
+  const [reviewSelected, setReviewSelected] = useState<number>(0);
 
   useEffect(() => {
-    console.log(selected);
-  }, [selected])
+    console.log(companySelected);
+  }, [companySelected])
 
+  const handleClick = (selected: string) => {
+    console.log("clicked!");
+    setCompanySelected(selected);
+  }
   return (
-    <div className={'flex flex-col w-screen h-screen p-8'}>
-      <h1 className={"prose text-5xl h-24"}>But you probably care more about my work...</h1>
-      <div className={`flex flex-row grow w-4/5 mx-auto justify-between items-center ${!!selected && 'opacity-0'} duration-1000`}>
-        <Tab src={eFuse} alt={"eFuse"} year={"2022-present"} company={"eFuse"} onClick={setSelected}/>
-        <Tab src={Dwell} alt={"Dwell"} year={"2019-present"} company={"Dwell"} onClick={setSelected}/>
-        <Tab src={Accenture} alt={"Accenture"} year={"2019-2022"} company={"Accenture"} onClick={setSelected}/>
-        <Tab src={NetJets} alt={"NetJets"} year={"2018-2019"} company={"NetJets"} onClick={setSelected}/>
+    <div>
+      <div className={'flex flex-col w-screen h-screen'}>
+        <div className={"h-1/2 p-8"}>
+          <h1 className={"prose text-4xl h-20 mb-8"}>But you probably care more about my work...</h1>
+          <div className={`flex flex-row w-full mx-auto justify-between mb-24 h-56`}>
+            {employerData.map(company => (<Tab
+              company={company}
+              onClick={handleClick}
+              hidden={companySelected !== "" && companySelected !== company.name}
+              selected={companySelected === company.name}
+            />))}
+          </div>
+        </div>
+        <div className={"flex flex-col h-1/2 text-white p-8 bg-[#4F5A44]"}>
+          <h1 className={"prose text-white text-4xl h-1/5"}>Or what people are saying about me...</h1>
+          <div className={"flex flex-col justify-center w-4/5 h-4/5 m-auto"}>
+            <Review review={reviewData[reviewSelected]}/>
+            <div className={"flex flex-row w-full justify-center mt-8"}>
+              {reviewData.map((review, index) => {
+                return (<Dot filled={index === reviewSelected} onClick={setReviewSelected} index={index}/>)
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
