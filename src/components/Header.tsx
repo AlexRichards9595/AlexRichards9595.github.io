@@ -8,7 +8,7 @@ import CVIcon from "../images/icons8-download-cv-48.png";
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => (
-  <div className={"absolute top-0 left-0 flex flex-row w-screen px-8 text-white h-24 justify-between items-center"}>
+  <div className={"absolute top-0 left-0 flex flex-row w-screen px-8 text-white w-full justify-between items-center"}>
     <div className={"w-48"}>
       <img className={"w-16 h-16"} src={Logo} alt={"logo"}></img>
     </div>

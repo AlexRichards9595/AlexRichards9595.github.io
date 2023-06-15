@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import WorkSection from "./components/WorkSection";
-import LandingImage from "./images/LandingImage.jpg";
+
 
 function App() {
   const scrollToElement = () => {
@@ -16,11 +16,13 @@ function App() {
   }, []);
   
   return (
-    <div className="App overflow-x-hidden relative">
+    <div className="App">
+      <div className={"overflow-clip"}>
         <Header />
         <LandingSection />
         <WorkSection />
       </div>
+    </div>
   );
 }
 
