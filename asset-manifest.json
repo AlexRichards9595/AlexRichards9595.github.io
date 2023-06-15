@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.8db1fe77.css",
-    "main.js": "/static/js/main.606a7dd4.js",
+    "main.css": "/static/css/main.d4441feb.css",
+    "main.js": "/static/js/main.b17f97be.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/LandingImage.jpg": "/static/media/LandingImage.9299c7546fa50cfeb1ab.jpg",
     "static/media/Dwell_Sunburst_Light.png": "/static/media/Dwell_Sunburst_Light.5c8e45bde3b48ee84295.png",
     "static/media/Logo.svg": "/static/media/Logo.e1624c7558ace8fdb550077fc3666847.svg",
     "index.html": "/index.html",
-    "main.8db1fe77.css.map": "/static/css/main.8db1fe77.css.map",
-    "main.606a7dd4.js.map": "/static/js/main.606a7dd4.js.map",
+    "main.d4441feb.css.map": "/static/css/main.d4441feb.css.map",
+    "main.b17f97be.js.map": "/static/js/main.b17f97be.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8db1fe77.css",
-    "static/js/main.606a7dd4.js"
+    "static/css/main.d4441feb.css",
+    "static/js/main.b17f97be.js"
   ]
 }
