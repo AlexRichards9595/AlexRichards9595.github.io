@@ -15,3 +15,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+}
+
+.typewriter.delay0 {
+  animation: 
+    typing 1.5s steps(20, end),
+    blink-caret .75s step-end 3;
+}
+
+.typewriter.delay3 {
+  width: 0;
+  animation: 
+    typing 1.5s 2.5s steps(20, end) forwards,
+    blink-caret .75s 2.5s step-end 3;
+}
+
+.typewriter.delay6 {
+  width: 0;
+  animation: 
+    typing 1.5s 6s steps(20, end) forwards,
+    blink-caret .75s 6s step-end 3;
+}
+
+.typewriter.delay8 {
+  width: 0;
+  animation: 
+    typing 1.5s 8s steps(20, end) forwards,
+    blink-caret .75s 8s step-end 4;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: rgb(217 119 6); }
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-name: animate-fade;
+  animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+  animation-fill-mode: backwards;
+}
+
+
+.animate.slide { 
+  animation-name: animate-pop; 
+  animation-delay: 7s;
+}
+
+@keyframes animate-slide {
+0% {
+opacity: 0;
+transform: translate(0,20px);
+}
+100% {
+    opacity: 1;
+    transform: translate(0,0);
+}
+}
+
+.animate.pop {
+  animation-name: animate-pop;
+  animation-delay: 9s;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}

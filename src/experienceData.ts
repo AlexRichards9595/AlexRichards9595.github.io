@@ -7,28 +7,39 @@ export interface Company {
   name: string;
   time: string;
   src: string;
+  description: string;
+  technologies: string;
 }
+
 
 export const employerData: Company[] = [
   {
     name: "eFuse",
     time: "2022-present",
     src: eFuse,
+    description: `Worked on a small team to develop features for the eRena product which is a tool for eSport tournament operators to manage and run tournaments. These features included team and player application management, bracket creation and management and tournament scoring. Some of the the major contributions I made here were implementing graphQL and Apollo best practices and splitting large, top level, calls into smaller calls closer to where the data was needed, reducing page load times down from ~6 seconds to under a second; fixing over 1000 TS errors to enable our team to turn Strict Mode on to improve and ensure code stability and maintainability; I also researched, discovered and implemented CodeGen into our stack to help maintain type safety across our tech stack.`,
+    technologies: "NextJS, React, Typescript, GraphQL, Apollo, MongoDB, TypeGoose, RTL, Jest"
   },
   {
     name: "Dwell",
-    time: "2019-present",
+    time: "2019-2022",
     src: Dwell,
+    description: "Provided technical guidance and development for transitioning from current PHP frontend to a single page application using a modern JS framework",
+    technologies: "NextJS, React, Typescript, PHP, MUI, RTL, Jest"
   },
   {
     name: "Accenture",
     time: "2019-2022",
     src: Accenture,
+    description: "Worked on various projects that included building new products, fixing and improving existing projects, and consulting on team and engineering practices",
+    technologies: "React, Angular, Python, Go, Java, C#"
   },
   {
     name: "NetJets",
     time: "2018-2019",
     src: NetJets,
+    description: "Scoped out and developed multiple ServiceNow projects for internal business users",
+    technologies: "Angular, ServiceNow"
   }
 ];
 
