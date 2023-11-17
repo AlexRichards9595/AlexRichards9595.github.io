@@ -52,6 +52,12 @@ export interface ReviewData {
 
 export const reviewData: ReviewData[] = [
   {
+    name: "Bo",
+    role: "Manager",
+    time: "October, 2023",
+    review: `Alex is a really good teammate and brings his A game ready to work and help where ever he can.  Alex is able to adapt very well and is not afraid to ask question and also to voice his ideas.`
+  },
+  {
     name: "Julie",
     role: "Delivery Lead",
     time: "June, 2020",
@@ -66,7 +72,7 @@ Alex's willingness to take on new tasks was made evident on a recent project whe
 As an artisan. Alex has a knack for helping on the delivery side. I have seen multiple instances where he stepped up to help or stand in for our Delivery Lead, by reviewing and refining story cards, keeping story boards up to date. and tracking sprint metrics. This has helped keep our team organized and moving.`
   },
   {
-    name: "Super duper",
+    name: "Dan",
     role: "Software Engineer",
     time: "June, 2020",
     review: `I have worked with Alex for over a year delivery side. I have seen multiple instances where he stepped up to help or stand in for our Delivery Lead, by reviewing and refining story cards, keeping story boards up to date. and tracking sprint metrics. This has helped keep our team organized and moving.`
